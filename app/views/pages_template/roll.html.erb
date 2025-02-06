@@ -1,0 +1,8 @@
+<h1><%= @dice_count %>d<%= @sides_count %></h1>
+
+<ul>
+  <% @dice_count.times do %>
+    <% @die = rand(1..@sides_count) %>
+    <li><%= @die %></li>
+  <% end %>
+</ul>
